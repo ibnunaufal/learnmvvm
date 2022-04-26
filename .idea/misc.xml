@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/shade.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2578125" />
       </map>
     </option>
   </component>
