@@ -1,15 +1,17 @@
 package id.co.solusinegeri.learnmvvm.dependencyInjection
 
+import android.app.Application
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
 import id.co.solusinegeri.learnmvvm.data.remote.MovieApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
-@InstallIn
+@InstallIn(ApplicationComponent::class)
 object AppModule {
 
     @Provides

@@ -8,14 +8,14 @@ private const val STARTING_PAGE_INDEX = 1
 
 class MoviePagingSource (
     private val movieApi: MovieApi
-    ) : PagingSource<Int, Result>(){
+    ) : PagingSource<Int, Movie>(){
 
-    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Result> {
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Movie> {
         TODO("Not yet implemented")
         return try {
             val position: Int = params.key ?: STARTING_PAGE_INDEX
             val response: MovieResponse = movieApi.getNowPlayingMovies(position)
-            val movies: List<Result> = response.results
+            val movies: List<Movie> = response.results
 
             LoadResult.Page(
                 data = movies,

@@ -4,7 +4,7 @@ package id.co.solusinegeri.learnmvvm.data.remote
 import androidx.annotation.Keep
 
 @Keep
-data class Result(
+data class Movies(
     val adult: Boolean,
     val backdrop_path: String,
     val genre_ids: List<Int>,
